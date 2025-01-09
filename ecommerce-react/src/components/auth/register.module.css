@@ -1,0 +1,50 @@
+.registerFormContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.registerFormContainer label {
+  display: block;
+  font-size: 1rem;
+  color: #d4e7f3;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.registerFormContainer input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.registerFormContainer input:focus {
+  border-color: #63cdda;
+  outline: none;
+  box-shadow: 0 0 5px rgba(99, 205, 218, 0.8);
+}
+
+.registerFormContainer button {
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #243b55;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.registerFormContainer p {
+  font-size: 1rem;
+  color: #d4e7f3;
+  margin-top: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1b263b;
+  --header-color: #243b55;
+  --footer-color: #1a1a2e;
+  --title-button-color: #e28f22;
+  --title-button-color-hover: #d29147;
+  --text-color: #ffffff;
+  --subtext-color: #a8d0e6;
+  --card-background-color: #243b55;
+  --validate-color: rgb(39, 123, 39);
+  --error-delete-color: rgb(154, 37, 37);
+  --error-delete-color-hover: rgb(184, 2, 2);
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-width: 375px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-button-color);
+}
+
+a {
+  color: var(--title-button-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul {
+  list-style: none;
+}

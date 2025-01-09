@@ -1,0 +1,108 @@
+.homeContainer {
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.homeContainer p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.projectDescription {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+}
+
+.projectDescription h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.projectDescription p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  line-height: 1.7;
+  color: #d4e7f3;
+}
+
+.justifyDescription {
+  text-align: justify;
+}
+
+.projectDescription strong {
+  color: var(--title-button-color);
+  text-transform: uppercase;
+}
+
+.productLink {
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: var(--title-button-color);
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.productLink:hover {
+  background-color: var(--title-button-color-hover);
+}
+
+@media (max-width: 1024px) {
+  .homeContainer {
+    padding: 2rem;
+  }
+
+  .projectDescription {
+    padding: 2rem 1.5rem;
+  }
+
+  .projectDescription h2 {
+    font-size: 1.8rem;
+  }
+
+  .projectDescription p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectDescription {
+    padding: 1.5rem;
+  }
+
+  .projectDescription h2 {
+    font-size: 1.6rem;
+  }
+
+  .projectDescription p {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}

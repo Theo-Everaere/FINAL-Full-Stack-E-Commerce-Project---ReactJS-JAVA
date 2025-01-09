@@ -1,0 +1,114 @@
+/* Style global du header */
+.header {
+  background-color: #243b55;
+  padding: 1rem 2rem;
+  position: relative;
+  height: 60px;
+}
+
+/* Menu de navigation classique, aligné à droite */
+.headerNav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end; /* Aligner les éléments à droite */
+}
+
+/* Espacement entre les éléments du menu */
+.headerNav li:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+/* Liens de navigation */
+.navLink {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover des liens */
+.navLink:hover {
+  color: var(--title-button-color);
+}
+
+/* Lien actif */
+.activeLink {
+  color: var(--title-button-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Menu hamburger */
+.menuToggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+  position: absolute; /* Positionnement absolu pour le placer à droite */
+  right: 1rem; /* Ajoute un espace à droite */
+  top: 50%; /* Centrer verticalement */
+  transform: translateY(-50%); /* Ajuster pour centrer parfaitement */
+  transition: transform 0.3s ease; /* Animation de transformation */
+}
+
+.menuToggle div {
+  height: 4px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #243b55;
+  box-shadow: 2px 2px 10px 0px #243b55;
+  transition: transform 0.3s ease;
+  z-index: 555;
+}
+
+.mobileMenu li {
+  margin: 1rem 0;
+}
+
+.mobileMenu li:last-child {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 60px;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+
+  .mobileMenu li {
+    margin: 0.5rem 0;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+}

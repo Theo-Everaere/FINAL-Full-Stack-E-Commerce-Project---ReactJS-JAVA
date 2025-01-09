@@ -1,0 +1,91 @@
+.userOrders {
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: #2d3e50;
+
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.userOrders h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.userOrders p {
+  font-size: 1rem;
+  color: #eaecef;
+}
+
+.userOrders ul {
+  padding: 0;
+  margin: 2rem 0;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+}
+
+.orderItem {
+  background-color: var(--card-background-color);
+  color: #eaecef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.orderItem:hover {
+  transform: translateY(-5px);
+}
+
+.orderInfo {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orderInfo strong {
+  font-size: 1.2rem;
+  color: #a8d0e6;
+}
+
+.orderItems {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orderItems li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #444;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.orderItemImage {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderDetails p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}

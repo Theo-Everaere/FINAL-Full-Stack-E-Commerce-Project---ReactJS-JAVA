@@ -1,0 +1,108 @@
+.productsPage {
+  display: flex;
+  background-color: #1b263b;
+  color: #eaecef;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.productsMain {
+  width: 75%;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.productsMain.shrinkMain {
+  transform: translateX(
+    -80%
+  ); /* Pousse le contenu principal quand le panier est visible sur mobile */
+}
+
+.productsMain h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-template-rows: auto;
+  margin-top: 2rem;
+}
+
+.cartSide {
+  width: 20%; /* Le panier reste à 20% de la largeur par défaut */
+  background-color: #090b1b;
+  padding: 1.5rem;
+  position: relative; /* Par défaut, le panier est visible */
+  transition: transform 0.3s ease;
+}
+
+.cartSide.showCart {
+  transform: translateX(0); /* Affiche le panier en mode mobile */
+}
+
+/* Bouton pour afficher ou masquer le panier */
+.toggleCartButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--validate-color);
+  color: #eaecef;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+}
+
+.toggleCartButton:hover {
+  background-color: #1b263b;
+}
+
+@media (max-width: 1120px) {
+  .cartSide {
+    position: absolute;
+    right: -100%; /* Le panier est masqué par défaut sur mobile */
+    top: 0;
+    height: 100%;
+    width: 80%; /* Le panier occupe 80% de la largeur en mode mobile */
+    z-index: 1000;
+  }
+
+  .cartSide.showCart {
+    right: 0;
+  }
+
+  .productsMain.shrinkMain {
+    width: 100%; /* Le contenu principal reste à 100% mais est décalé */
+  }
+
+  .toggleCartButton {
+    display: block;
+  }
+}
+
+.categoryContainer {
+  width: 300px;
+}
+
+@media (max-width: 1165px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+}

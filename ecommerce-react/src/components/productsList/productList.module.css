@@ -1,0 +1,127 @@
+.productList {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.productItemList {
+  background-color: var(--card-background-color);
+  border: 1px solid #3e4a63;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productItemList:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.productImage {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.productImageImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.noImage {
+  background-color: #4e5d74;
+  padding: 20px;
+  color: #eaecef;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.productInfo {
+  flex-grow: 1;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: var(--title-button-color);
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #a8d0e6;
+}
+
+.availability {
+  color: var(--subtext-color);
+  font-size: 0.9rem;
+  text-align: start;
+}
+
+.productDescription {
+  font-size: 1rem;
+  color: var(--subtext-color);
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
+.productActions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.productActions button {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editButton {
+  background-color: var(--title-button-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: var(--validate-color);
+}
+
+.deleteButton {
+  background-color: var(--error-delete-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: var(--error-delete-color-hover);
+}
+
+.productActions button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.7);
+}
+
+@media (max-width: 768px) {
+  .productList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productItemList {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

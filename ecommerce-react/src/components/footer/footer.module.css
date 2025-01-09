@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--footer-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid #243b55;
+  font-weight: 500;
+}
+
+.footer a {
+  color: var(--title-button-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.8rem;
+    padding: 0.8rem 0;
+  }
+}

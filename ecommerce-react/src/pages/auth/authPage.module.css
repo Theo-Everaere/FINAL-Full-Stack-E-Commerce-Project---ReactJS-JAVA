@@ -1,0 +1,50 @@
+.authContainer {
+  padding: 3rem;
+  text-align: center;
+  background-color: #1b263b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.authContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.authContainer button {
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #243b55;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authContainer button:hover {
+  background-color: #1c698a;
+}
+
+@media (max-width: 1024px) {
+  .authContainer {
+    padding: 2rem;
+  }
+
+  .authContainer h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .authContainer h1 {
+    font-size: 1.8rem;
+  }
+}
